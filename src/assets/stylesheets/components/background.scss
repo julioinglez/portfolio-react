@@ -1,0 +1,61 @@
+a{
+  position: relative;
+  width: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 30px;
+  color: white;
+  box-sizing: border-box;
+  opacity: 1;
+  z-index: 2;
+  transition: all 0.4s ease-out 1s;
+
+  &.link-home{
+    background: #6b9ed1;
+  }
+
+  &.link-formnflow{
+    background: #8fdd7f;
+  }
+}
+
+.fade-appear,
+.fade-enter{
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active{
+  opacity: 1;
+  transition: opacity 0.5s linear 5s;
+}
+
+.fade-exit{
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active{
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+
+.page-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 50px;
+}
+
+.page{
+  position: relative;
+  display: inline-flex;
+  top: 0;
+  font-size: 50px;
+}

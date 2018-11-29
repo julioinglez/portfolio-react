@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Formnflow from './Formnflow';
 import Navigation from '../components/Navigation';
@@ -12,7 +12,7 @@ export default () => (
     </div>
     <Route render={({location}) => (
       <TransitionGroup>
-        <CSSTransition key={location.key} timeout={500} classNames="fade">
+        <CSSTransition key={location.key} timeout={5000} classNames="fade">
           <Switch location={location}>
             <Route exact path="/" component={Home} />
             <Route path="/formnflow" component={Formnflow} />

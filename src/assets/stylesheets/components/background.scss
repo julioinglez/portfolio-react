@@ -30,7 +30,7 @@ a{
 .fade-appear-active,
 .fade-enter.fade-enter-active{
   opacity: 1;
-  transition: opacity 0.5s linear 5s;
+  transition: opacity 500ms linear 500ms;
 }
 
 .fade-exit{
@@ -39,7 +39,7 @@ a{
 
 .fade-exit.fade-exit-active{
   opacity: 0;
-  transition: opacity 0.5s linear;
+  transition: opacity 500ms linear;
 }
 
 .page-container{

@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Formnflow from './Formnflow';
+import Hatcher from './Hatcher';
 import Navigation from '../components/Navigation';
 import { TransitionGroup, CSSTransition  } from 'react-transition-group';
 
@@ -16,6 +17,7 @@ export default () => (
           <Switch location={location}>
             <Route exact path="/" component={Home} />
             <Route path="/formnflow" component={Formnflow} />
+            <Route path="/hatcher" component={Hatcher} />
           </Switch>
         </CSSTransition>
       </TransitionGroup>

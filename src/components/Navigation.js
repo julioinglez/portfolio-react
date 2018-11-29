@@ -5,5 +5,6 @@ export default () => (
   <div>
     <NavLink exact to="/" activeClassName="active" className="link-home">Home</NavLink>
     <NavLink exact to="/formnflow" activeClassName="active" className="link-formnflow">Formnflow</NavLink>
+    <NavLink exact to="/hatcher" activeClassName="active" className="link-hatcher">Hatcher</NavLink>
   </div>
 );

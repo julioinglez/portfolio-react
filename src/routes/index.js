@@ -3,14 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Formnflow from './Formnflow';
 import Hatcher from './Hatcher';
-import Navigation from '../components/Navigation';
 import { TransitionGroup, CSSTransition  } from 'react-transition-group';
 
 export default () => (
   <div>
-    <div>
-      <Navigation />
-    </div>
     <Route render={({location}) => (
       <TransitionGroup>
         <CSSTransition key={location.key} timeout={5000} classNames="fade">

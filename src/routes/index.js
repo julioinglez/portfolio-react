@@ -3,6 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Formnflow from './Formnflow';
 import Hatcher from './Hatcher';
+import NexusPattern from './NexusPattern';
+import SpeedyVocab from './SpeedyVocab';
 import { TransitionGroup, CSSTransition  } from 'react-transition-group';
 
 export default () => (
@@ -14,6 +16,7 @@ export default () => (
             <Route exact path="/" component={Home} />
             <Route path="/formnflow" component={Formnflow} />
             <Route path="/hatcher" component={Hatcher} />
+            <Route path="/nexus-pattern" component={SpeedyVocab} />
           </Switch>
         </CSSTransition>
       </TransitionGroup>

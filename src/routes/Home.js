@@ -8,6 +8,8 @@ export default class Home extends React.Component {
         <ProjectDisplay project="home" projectTitle="Home" />
         <ProjectDisplay project="formnflow" projectTitle="Formnflow" />
         <ProjectDisplay project="hatcher" projectTitle="Hatcher" />
+        <ProjectDisplay project="nexus-pattern" projectTitle="Nexus Pattern" />
+        <ProjectDisplay project="speedy-vocab" projectTitle="Speedy Vocab" />
       </div>
     )
   }

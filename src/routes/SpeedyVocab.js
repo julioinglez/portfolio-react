@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Formnflow extends React.Component {
+export default class SpeedyVocab extends React.Component {
   render() {
     return(
       <div>

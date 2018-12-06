@@ -8,18 +8,17 @@ import SpeedyVocab from './SpeedyVocab';
 import { TransitionGroup, CSSTransition  } from 'react-transition-group';
 
 export default () => (
-  <div>
-    <Route render={({location}) => (
-      <TransitionGroup>
-        <CSSTransition key={location.key} timeout={5000} classNames="fade">
-          <Switch location={location}>
-            <Route exact path="/" component={Home} />
-            <Route path="/formnflow" component={Formnflow} />
-            <Route path="/hatcher" component={Hatcher} />
-            <Route path="/nexus-pattern" component={SpeedyVocab} />
-          </Switch>
-        </CSSTransition>
-      </TransitionGroup>
-    )} />
-  </div>
+  <Route render={({location}) => (
+    <TransitionGroup>
+      <CSSTransition key={location.key} timeout={1000} classNames="fade">
+        <Switch location={location}>
+          <Route exact path="/" component={Home} />
+          <Route path="/formnflow" component={Formnflow} />
+          <Route path="/hatcher" component={Hatcher} />
+          <Route path="/nexus-pattern" component={NexusPattern} />
+          <Route path="/speedy-vocab" component={SpeedyVocab} />
+        </Switch>
+      </CSSTransition>
+    </TransitionGroup>
+  )} />
 );

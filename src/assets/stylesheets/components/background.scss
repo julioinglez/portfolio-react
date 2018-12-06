@@ -1,5 +1,17 @@
+.project-show-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .project-display-container{
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: auto;
   display: flex;
@@ -87,4 +99,23 @@
   display: inline-flex;
   top: 0;
   font-size: 50px;
+}
+
+.swiper-container{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  .swiper-wrapper{
+    position: relative;
+    width: 100%;
+
+    .swiper-slide{
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+  }
 }

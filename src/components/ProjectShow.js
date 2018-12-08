@@ -6,7 +6,7 @@ export default class ProjectShow extends React.Component {
     return(
       <div className={'project-show ' + this.props.project}>
         <h1>{this.props.project}</h1>
-        <NavLink exact to="/" activeClassName="active" className={this.props.project}>{this.props.projectLink}</NavLink>
+        <NavLink exact to="/" activeClassName="active" className={this.props.project} data-reload="true">{this.props.projectLink}</NavLink>
       </div>
     )
   }

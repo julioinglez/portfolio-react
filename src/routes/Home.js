@@ -4,13 +4,13 @@ import ProjectDisplay from '../components/ProjectDisplay';
 
 export default class Home extends React.Component {
   componentDidMount() {
-     var swiper = new Swiper('.swiper-container', {
-       direction: 'vertical',
-       threshold: 15,
-       loop: true,
-       mousewheel: true,
-       keyboard: true,
-     });
+    this.swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      threshold: 15,
+      loop: true,
+      mousewheel: true,
+      keyboard: true,
+    });
   }
 
   render() {

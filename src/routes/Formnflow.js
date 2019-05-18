@@ -1,9 +1,11 @@
 import React from 'react';
 import Swiper from 'swiper';
 import ProjectShow from '../components/ProjectShow';
+import history from '../history';
 
 export default class Formnflow extends React.Component {
-  componentDidMount() {
+
+  swiperMount = () => {
     this.swiper = new Swiper('.swiper-container', {
       threshold: 0,
       mousewheel: true,
@@ -12,9 +14,14 @@ export default class Formnflow extends React.Component {
     var swiper = document.querySelector('.swiper-container').swiper
     swiper.prependSlide('<div class="swiper-slide">Slide 0"</div>');
     swiper.allowSlideNext = false
+
     swiper.on('slideChange', function() {
-      console.log("BACK HOME PLS");
+      history.push('/');
     });
+  }
+
+  componentDidMount() {
+    this.swiperMount()
   }
 
   render() {

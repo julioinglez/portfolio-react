@@ -1,9 +1,10 @@
 import React from 'react';
 import Routes from './routes';
-import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import history from './history';
 
 export default () => (
-  <BrowserRouter>
+  <Router history={history}>
     <Routes />
-  </BrowserRouter>
+  </Router>
 );

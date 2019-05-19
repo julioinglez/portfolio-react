@@ -4,7 +4,7 @@ import ProjectDisplay from '../components/ProjectDisplay';
 
 export default class Home extends React.Component {
   componentDidMount() {
-    this.swiper = new Swiper('.swiper-container', {
+    this.swiper = new Swiper('.swiper-container.home', {
       direction: 'vertical',
       threshold: 15,
       loop: true,
@@ -16,7 +16,7 @@ export default class Home extends React.Component {
   render() {
     return(
       <div className="project-display-container">
-        <div className="swiper-container">
+        <div className="swiper-container home">
           <div className="swiper-wrapper">
             <div className="swiper-slide">
               <ProjectDisplay project="home" projectTitle="Home" />

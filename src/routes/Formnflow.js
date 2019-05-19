@@ -6,13 +6,13 @@ import history from '../history';
 export default class Formnflow extends React.Component {
 
   swiperMount = () => {
-    this.swiper = new Swiper('.swiper-container', {
+    this.swiper = new Swiper('.swiper-container.formnflow', {
       threshold: 0,
       mousewheel: true,
     });
 
     var swiper = document.querySelector('.swiper-container').swiper
-    swiper.prependSlide('<div class="swiper-slide">Slide 0"</div>');
+    swiper.prependSlide('<div class="swiper-slide"></div>');
     swiper.allowSlideNext = false
 
     swiper.on('slideChange', function() {
@@ -27,7 +27,7 @@ export default class Formnflow extends React.Component {
   render() {
     return(
       <div className="project-display-container">
-        <div className="swiper-container">
+        <div className="swiper-container formnflow">
           <div className="swiper-wrapper">
             <div className="swiper-slide">
               <ProjectShow project="formnflow" projectTitle="Formnflow" projectLink="Home" />
